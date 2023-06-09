@@ -73,7 +73,6 @@ img {
   display: flex;
   align-items: center;
   margin-right: 332px;
-  position: relative;
 }
 .menu {
   display: flex;
@@ -105,6 +104,40 @@ img {
   color: var(--secondary-color);
   display: block;
   padding: 24px 0;
+}
+.menu .link {
+  position: relative;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu .item:not(:last-child) {
+  margin-right: 40px;
+}
+.menu .menu-item:hover,
+.menu .menu-item:focus {
+  color: var(--accent-color);
+}
+
+.menu-item {
+  color: var(--secondary-color-text);
+}
+.current {
+  color: var(--accent-color);
+}
+.current::after {
+  position: absolute;
+  display: inline;
+  content: '';
+  background-color: var(--accent-color);
+  top: 68px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  bottom: -1px;
 }
 .contacts-list {
   display: flex;
