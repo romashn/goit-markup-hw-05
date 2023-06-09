@@ -73,6 +73,7 @@ img {
   display: flex;
   align-items: center;
   margin-right: 332px;
+  position: relative;
 }
 .menu {
   display: flex;
@@ -92,7 +93,6 @@ img {
   text-transform: uppercase;
   color: var(--button-color);
   margin-right: 76px;
-  position: relative;
 }
 .logo-text-header {
   color: var(--secondary-color);
