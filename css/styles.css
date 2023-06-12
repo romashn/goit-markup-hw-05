@@ -133,7 +133,6 @@ img {
   display: inline;
   content: '';
   background-color: var(--button-hoover);
-  top: 68px;
   left: 0;
   width: 100%;
   height: 4px;
